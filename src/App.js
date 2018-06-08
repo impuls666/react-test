@@ -13,7 +13,8 @@ export default class App extends React.Component {
     <BrowserRouter>
     <div>   
       <Route exact path='/' component={Galeria}/>
-      <Route exact path='/test' component={Test}/>  
+      <Route exact path='/zvierata' component={Test}/>
+      <Route exact path='/budovy' component={Test}/>    
     </div>   
     </BrowserRouter>
     )

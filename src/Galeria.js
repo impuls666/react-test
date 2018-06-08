@@ -1,20 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import './App.css';
 import OBJEKTY from './Data';
+import Obrazok from './Obrazok';
 
-
-
-class Objekt extends React.Component {
-  render(){
-    return(
-      <div className="col-md-3">
-      <img className='gallery-thumbnail' src={this.props.objekty} />
-      <Link to="/test" className='card-icon-open'></Link>
-      </div>
-    ) 
-    }
-}
 
 export default class Galeria extends React.Component {
     render()
@@ -24,7 +12,11 @@ export default class Galeria extends React.Component {
         <div className="container">     
        {
         OBJEKTY.map((objekt, index)=>{
-          return <Objekt objekty={objekt["category-image"]} alt={'Image number ' + (index + 1)} />        
+          return (            
+          <div>
+          <Obrazok objekty={objekt["category-image"]} index={index} url={objekt["url"]} alt={'Image number ' + (index + 1)} />     
+          </div>
+          );
         })
        } 
        </div> 
