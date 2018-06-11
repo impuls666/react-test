@@ -7,9 +7,9 @@ import Obrazok from './Obrazok';
 export default class Galeria extends React.Component {
     render()
     {
-      return(
-        <div className="row">
-        <div className="container">     
+      return(       
+        <div className="container"> 
+         <div className="row">    
        {
         OBJEKTY.map((objekt, index)=>{
           return (            

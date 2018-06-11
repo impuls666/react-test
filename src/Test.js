@@ -14,8 +14,9 @@ export default class Test extends React.Component {
       })   
       console.log(this.props.match.params.categoryName);
       return(
-        <div className="row">
+      
         <div className="container">
+        <div className="row">    
         {     
                pici.map((objekt)=> {         
                 return objekt.subimages.map((odkaz, index)=> {             
@@ -24,7 +25,7 @@ export default class Test extends React.Component {
                })  
         }          
        </div>    
-       </div>
+       </div> 
       )
     }
 }
