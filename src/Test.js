@@ -10,9 +10,9 @@ export default class Test extends React.Component {
     render()
     {
       var pici =  OBJEKTY.filter((objekt)=> {         
-        return objekt.url === this.props.location.pathname;                           
+        return objekt.url === this.props.match.params.categoryName;                           
       })   
-      console.log(this.props.location.pathname);
+      console.log(this.props.match.params.categoryName);
       return(
         <div className="row">
         <div className="container">
@@ -23,7 +23,7 @@ export default class Test extends React.Component {
                  })
                })  
         }          
-       </div> 
+       </div>    
        </div>
       )
     }

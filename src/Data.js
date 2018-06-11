@@ -2,7 +2,7 @@ var OBJEKTY = [
         {
           'id': 1,
           'name': 'zvierata',
-          'url' : '/zvierata',
+          'url' : 'zvierata',
           'category-image' : 'https://images.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg?auto=compress&cs=tinysrgb&h=350',
           'subimages' : [
             'https://images.pexels.com/photos/288621/pexels-photo-288621.jpeg?auto=compress&cs=tinysrgb&h=350',
@@ -14,7 +14,7 @@ var OBJEKTY = [
         {
           'id': 2,
           'name': 'budovy',
-          'url' : '/budovy',
+          'url' : 'budovy',
           'category-image' : 'https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&h=350',
           'subimages' : [
             'https://images.pexels.com/photos/417273/pexels-photo-417273.jpeg?auto=compress&cs=tinysrgb&h=350',
